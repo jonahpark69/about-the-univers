@@ -20,9 +20,7 @@ Projet front statique pour explorer l’univers Star Wars via l’API publique S
 
 ## Démarrage rapide
 1. Cloner ou récupérer le dossier `about-the-univers`.
-2. Servir le répertoire avec un serveur statique (ex. `npx serve .` ou `python -m http.server 8000`), puis ouvrir `http://localhost:8000/index.html`.
-   > Ouvrir directement le fichier dans le navigateur peut bloquer les appels `fetch` pour cause de CORS/file://.
-3. Naviguer vers `planetes.html`, `vehicules.html` ou `personnes.html` pour explorer les données.
+2. Naviguer vers `planetes.html`, `vehicules.html` ou `personnes.html` pour explorer les données.
 
 ## Notes techniques
 - Aucune build tool : HTML/CSS/JS vanilla.
