@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planetes - Holocron Galactique</title>
+  <link rel="icon" href="assets/icon/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="side-nav">
+    <div class="side-nav__items">
+      <a class="nav-button active" href="planetes.html">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M7 5c1.5 2.2 1.5 11.8 0 14" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M17 5c-1.5 2.2-1.5 11.8 0 14" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </span>
+        <span class="nav-text">Planetes</span>
+      </a>
+      <a class="nav-button" href="vehicules.html">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path d="M12 2c1.5 1.6 3.5 4.7 3.5 7.4 0 1.7-0.5 2.9-1 4.2l3.5 2-0.8 2.3-3.9-0.7-2.3 5.8-2.3-5.8-3.9 0.7-0.8-2.3 3.5-2c-0.5-1.3-1-2.5-1-4.2C8.5 6.7 10.5 3.6 12 2Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="nav-text">Vehicules</span>
+      </a>
+      <a class="nav-button" href="personnes.html">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path d="M12 12a5 5 0 1 0-0.01 0ZM5 21c0-3.3 2.4-6 7-6s7 2.7 7 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="nav-text">Personnes</span>
+      </a>
+    </div>
+  </aside>
+
+  <main>
+    <header class="topbar">
+      <div class="topbar-brand">STAR WARS: GALAXY'S EDGE</div>
+      <nav class="topbar-links">
+        <a href="index.html" class="top-link">Accueil</a>
+        <a href="planetes.html" class="top-link active">Planetes</a>
+        <a href="vehicules.html" class="top-link">Vehicules</a>
+        <a href="personnes.html" class="top-link">Personnes</a>
+      </nav>
+    </header>
+
+    <section class="panel planet-panel" id="planets-page" data-section>
+      <div class="panel-content">
+        <p class="eyebrow">Planètes</p>
+        <h2>Liste complète</h2>
+        <p class="data-subtitle">Récupération des données de toutes les planètes de l'univers Star Wars.</p>
+        <div class="planet-actions">
+          <div class="planet-filter">
+            <label for="population-filter">Par population</label>
+            <div class="planet-filter__controls">
+              <select id="population-filter">
+                <option value="all">Par population</option>
+                <option value="low">0 à 100.000</option>
+                <option value="mid">100.000 à 100.000.000</option>
+                <option value="high">+100.000.000</option>
+              </select>
+              <input id="planet-search" type="search" placeholder="Faites votre recherche" aria-label="Rechercher une planète" />
+            </div>
+            <p class="filter-hint">Choisissez une tranche et/ou recherchez par nom, terrain ou climat.</p>
+          </div>
+        </div>
+        <div class="planet-table">
+          <div class="planet-row planet-head">
+            <span>Nom</span>
+            <span>Terrain</span>
+            <span>Population</span>
+          </div>
+          <div class="planet-body" id="planet-body"></div>
+        </div>
+        <div class="status" id="planet-status">Chargement des planètes...</div>
+        <div class="planet-count" id="planet-count"></div>
+        <div class="planet-detail" id="planet-detail">
+          <div class="planet-detail__header">
+            <div>
+              <p class="eyebrow">Détails de la planète</p>
+              <h3 class="detail-title" id="detail-name">Sélectionnez une planète</h3>
+              <p class="detail-meta">Population : <span id="detail-population">-</span></p>
+            </div>
+            <a class="ghost-button detail-link is-disabled" id="planet-link" aria-disabled="true" rel="noreferrer">En savoir plus</a>
+          </div>
+          <div class="planet-detail__grid">
+            <div class="detail-tile">
+              <div class="detail-label">Diamètre</div>
+              <div class="detail-value" id="detail-diameter">-</div>
+            </div>
+            <div class="detail-tile">
+              <div class="detail-label">Gravité</div>
+              <div class="detail-value" id="detail-gravity">-</div>
+            </div>
+            <div class="detail-tile">
+              <div class="detail-label">Climat</div>
+              <div class="detail-value" id="detail-climate">-</div>
+            </div>
+            <div class="detail-tile">
+              <div class="detail-label">Terrain</div>
+              <div class="detail-value" id="detail-terrain">-</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="utile.js"></script>
+  <script src="dom.js"></script>
+  <script src="nav.js"></script>
+  <script src="api.js"></script>
+  <script src="planets.js"></script>
+</body>
+</html>

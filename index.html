@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holocron Galactique</title>
+  <link rel="icon" href="assets/icon/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="side-nav">
+    <div class="side-nav__items">
+      <a class="nav-button" href="planetes.html">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M3 12h18M12 3c2.5 3 2.5 15 0 18" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M7 5c1.5 2.2 1.5 11.8 0 14" fill="none" stroke="currentColor" stroke-width="2" />
+            <path d="M17 5c-1.5 2.2-1.5 11.8 0 14" fill="none" stroke="currentColor" stroke-width="2" />
+          </svg>
+        </span>
+        <span class="nav-text">Planetes</span>
+      </a>
+      <a class="nav-button" href="vehicules.html">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path d="M12 2c1.5 1.6 3.5 4.7 3.5 7.4 0 1.7-0.5 2.9-1 4.2l3.5 2-0.8 2.3-3.9-0.7-2.3 5.8-2.3-5.8-3.9 0.7-0.8-2.3 3.5-2c-0.5-1.3-1-2.5-1-4.2C8.5 6.7 10.5 3.6 12 2Z" fill="currentColor" />
+          </svg>
+        </span>
+        <span class="nav-text">Vehicules</span>
+      </a>
+      <a class="nav-button" href="personnes.html">
+        <span class="nav-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" role="presentation">
+            <path d="M12 12a5 5 0 1 0-0.01 0ZM5 21c0-3.3 2.4-6 7-6s7 2.7 7 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </span>
+        <span class="nav-text">Personnes</span>
+      </a>
+    </div>
+  </aside>
+  <main>
+    <header class="topbar">
+      <div class="topbar-brand">STAR WARS: GALAXY'S EDGE</div>
+      <nav class="topbar-links">
+        <a href="#about" class="top-link active" data-target="about">Accueil</a>
+        <a href="#mission" class="top-link" data-target="mission">Prochaine mission</a>
+        <a href="#data" class="top-link" data-target="data">Données en direct</a>
+      </nav>
+    </header>
+
+    <section class="panel hero" id="about" data-section>
+      <img class="hero-bg" src="assets/img/star-wars-darth-vader-dark-side-desktop-wallpaper-preview.jpg" alt="Image de fond a personnaliser">
+      <div class="panel-content">
+        <p class="eyebrow">About the Universe</p>
+        <h1>Explore the Galaxy</h1>
+        <h2>...not so far away</h2>
+        <div class="search-bar">
+          <span class="search-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" role="presentation">
+              <circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2" fill="none" />
+              <line x1="16" y1="16" x2="21" y2="21" stroke="currentColor" stroke-width="2" />
+            </svg>
+          </span>
+          <input type="text" placeholder="Recherche">
+        </div>
+        <div class="hero-meta">
+          <div class="hero-meta-item">
+            <span class="meta-number">01</span>
+            <span class="meta-label">Planète Batuu</span>
+          </div>
+          <div class="hero-meta-item">
+            <span class="meta-number">Millennium Falcon</span>
+            <span class="meta-label">Smugglers Run</span>
+          </div>
+        </div>
+        <div class="hero-intro">
+          <p>Bienvenue sur ABOUT THE UNIVERSE pour decouvrir toutes nos decouvertes a propos du monde qui nous entoure !</p>
+          <button class="ghost-button">DECOUVRIR</button>
+        </div>
+      </div>
+      <div class="hero-thumb">
+        <img src="assets/icon/star-wars.jpg" alt="Miniature mission">
+      </div>
+      <div class="hero-carousel">
+        <button aria-label="Prev"><</button>
+        <button aria-label="Next">></button>
+      </div>
+    </section>
+
+    <section class="panel stats bg-home-stats" id="mission" data-section>
+      <div class="panel-content">
+        <h2>LES CHIFFRES</h2>
+        <p>Nous nous efforçons à archiver toutes nos trouvailles pour vous les partager autant que possible !</p>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M12 12a4 4 0 1 0-0.01 0ZM4 20c0-3 2-5.5 8-5.5s8 2.5 8 5.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div>
+              <div class="stat-label">Nombre d'êtres vivants recensés</div>
+              <div class="stat-value">82</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <path d="M4 15c4.5-3 11.5-3 16 0l-0.5 2c-4-2-11-2-15 0Z" fill="currentColor" />
+                <path d="M12 4 7 12h10Z" fill="currentColor" />
+              </svg>
+            </span>
+            <div>
+              <div class="stat-label">Nombre de véhicules recensés</div>
+              <div class="stat-value">39</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2" />
+                <path d="M12 4a8 8 0 0 0 0 16 8 8 0 0 0 0-16ZM12 4v16M4 12h16" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <div>
+              <div class="stat-label">Nombre de planètes recensées</div>
+              <div class="stat-value">60</div>
+            </div>
+          </div>
+          <div class="stat-card">
+            <span class="stat-icon">
+              <svg viewBox="0 0 24 24" role="presentation">
+                <circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2" />
+                <path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+              </svg>
+            </span>
+            <div>
+              <div class="stat-label">Prochaine mission</div>
+              <div class="stat-value">16 Decembre 2025</div>
+            </div>
+          </div>
+        </div>
+        <div class="stats-action">
+          <button class="ghost-button">PARTICIPER A LA PROCHAINE MISSION</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel data-panel bg-home-data" id="data" data-section>
+      <div class="panel-content">
+        <div class="data-header">
+          <div>
+            <p class="eyebrow">Données en direct</p>
+            <h2>Planètes, Véhicules, Personnages</h2>
+            <p class="data-subtitle">Synchroniser avec l'API Star Wars (SWAPI) pour récupérer les infos clés. Le contenu de la page reste conservé, ces blocs ajoutent la connexion live.</p>
+          </div>
+          <button class="ghost-button" data-refresh>Rafraîchir</button>
+        </div>
+        <div class="data-grid">
+          <div class="data-column">
+            <div class="data-head">
+              <h3>People</h3>
+              <span class="chip">/people/</span>
+            </div>
+            <div class="status" id="people-status">Chargement...</div>
+            <ul class="data-list" id="people-list"></ul>
+          </div>
+          <div class="data-column">
+            <div class="data-head">
+              <h3>Vehicules</h3>
+              <span class="chip">/vehicles/</span>
+            </div>
+            <div class="status" id="vehicles-status">Chargement...</div>
+            <ul class="data-list" id="vehicles-list"></ul>
+          </div>
+          <div class="data-column">
+            <div class="data-head">
+              <h3>Planetes</h3>
+              <span class="chip">/planets/</span>
+            </div>
+            <div class="status" id="planets-status">Chargement...</div>
+            <ul class="data-list" id="planets-list"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+  </main>
+
+  <script src="utile.js"></script>
+  <script src="dom.js"></script>
+  <script src="nav.js"></script>
+  <script src="api.js"></script>
+  <script src="planets.js"></script>
+</body>
+</html>
